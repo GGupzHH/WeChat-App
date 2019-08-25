@@ -1,5 +1,22 @@
 <!--index.wxml-->
 <view class="container">
+  <view class='h1'>GGupzhhxxxxxxxxxxxxxxx系统</view>
+  <view class='uname'>
+    <text>姓名</text>
+    <input type='text'></input>
+  </view>
+  <view class='pwd'>
+    <text>密码</text>
+    <input type='password'></input>
+  </view>
+  <view class='btn'>
+    <button>注册</button>
+  </view>
+</view>
+
+<!-- 
+<view class='box'>
+  </view>
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -9,5 +26,4 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+  </view> -->
