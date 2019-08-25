@@ -3,14 +3,14 @@
   <view class='h1'>GGupzhhxxxxxxxxxxxxxxx系统</view>
   <view class='uname'>
     <text>姓名</text>
-    <input type='text'></input>
+    <input type='text' bindinput="getName"></input>
   </view>
   <view class='pwd'>
     <text>密码</text>
-    <input type='password'></input>
+    <input type='password' bindinput="getPwd"></input>
   </view>
   <view class='btn'>
-    <button>注册</button>
+    <button bindtap="getProjectList">注册</button>
   </view>
 </view>
 

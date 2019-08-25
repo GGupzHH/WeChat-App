@@ -7,13 +7,29 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    name: '',
+    pwd: ''
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  getProjectList: function () {
+    console.log(123)
+    console.log(this.name)
+    console.log(this.pwd)
+    wx.navigateTo({
+      url: '../companyList/companyList',
+    })
+  },
+  getName: function (event) {
+    this.name = event.detail.value
+  },
+  getPwd: function (event) {
+    this.pwd = event.detail.value
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
