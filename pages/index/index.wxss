@@ -51,5 +51,6 @@ input[type="text"],input[type="password"] {
 button {
   background-color: #6DFFCB;
   height: 100rpx;
+  line-height: 100rpx;
   border-radius: 0px;
 }
